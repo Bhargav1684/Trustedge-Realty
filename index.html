@@ -4,252 +4,805 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Trustedgerealty.com</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <link rel="website icon" type="png" href="images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 </head>
 
 <body>
-
+    <!---hero image with navigation bar-->
     <div class="hero-img">
         <div class="navbar">
-            <img src="logo" class="logo">
+            <img src="images/logo.png" class="logo">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Properties</a></li>
-                <li><a href="#">Realtor</a></li>
-                <li><a href="#">Service</a></li>
-                <li><a href="#">About US</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="property1.html">Properties</a></li>
+                <li><a href="contact.html">Inquiry</a></li>
+                <li><a href="#">Other</a></li>
+                <li><a href="login.html">Log in</a></li>
             </ul>
         </div>
-        <div class="content">
-            <h2>Find Your Dream Properties</h2>
-            <p>Trustedge Realty Pvt Ltd is a Professional Real Estate Agent | Real Estate Agency | Real Estate Broker that
-                helps to ensure your <br>best property as per your need in this super-competitive market of Ahmedabad -
-                Gujarat.
-            </p>
-            <div>
-                <button type="button"><span></span>For Rent</button>
-                <button type="button"><span></span>For Sale</button>
-                <button type="button"><span></span>New Project</button>
-            </div>
-        </div>
-    </div>
-    <div class="shop-section">
-        <div class="shop-container">
-            <h1 class="shop-title">Our Shop</h1>
-            <div class="shop-grid">
-                <div class="product">
-                    <img src="box1.jpg" alt="Product 1">
-                    <h3>Shilp Residency</h3>
-                    <p class="price">$19.99</p>
-                    <p class="price">$19.99</p>
-                    <p class="price">$19.99</p>
-                    <button class="add-to-cart">More Detail</button>
-                </div>
-
-                <div class="product">
-                    <img src="box1.jpg" alt="Product 2">
-                    <h3>Skyline</h3>
-                    <p class="price">$29.99</p>
-                    <p class="price">$19.99</p>
-                    <p class="price">$19.99</p>
-                    <button class="add-to-cart">More Detail</button>
-                </div>
-
-                <div class="product">
-                    <img src="box1.jpg" alt="Product 3">
-                    <h3>Shilp Serene</h3>
-                    <p class="price">$39.99</p>
-                    <p class="price">$19.99</p>
-                    <p class="price">$19.99</p>
-                    <button class="add-to-cart">More Detail</button>
-                </div>
-
-                <div class="product">
-                    <img src="box1.jpg" alt="Product 3">
-                    <h3>Rajvi Opal</h3>
-                    <p class="price">$39.99</p>
-                    <p class="price">$19.99</p>
-                    <p class="price">$19.99</p>
-                    <button class="add-to-cart">More Detail</button>
-                </div>
-
-                <div class="product">
-                    <img src="box1.jpg" alt="Product 3">
-                    <h3>Swarnim Sun</h3>
-                    <p class="price">$39.99</p>
-                    <p class="price">$19.99</p>
-                    <p class="price">$19.99</p>
-                    <button class="add-to-cart">More Detail</button>
-                </div>
-
-                <div class="product">
-                    <img src="box1.jpg" alt="Product 3">
-                    <h3>Blue Bell</h3>
-                    <p class="price">$39.99</p>
-                    <p class="price">$19.99</p>
-                    <p class="price">$19.99</p>
-                    <button class="add-to-cart">More Detail</button>
-                </div>
-
-                <div class="product">
-                    <img src="box1.jpg" alt="Product 3">
-                    <h3>Shilp Resedency</h3>
-                    <p class="price">$39.99</p>
-                    <p class="price">$19.99</p>
-                    <p class="price">$19.99</p>
-                    <button class="add-to-cart">More Detail</button>
-                </div>
-
-                <div class="product">
-                    <img src="box1.jpg" alt="Product 3">
-                    <h3>Omkar Parisar</h3>
-                    <p class="price">$39.99</p>
-                    <p class="price">$19.99</p>
-                    <p class="price">$19.99</p>
-                    <button class="add-to-cart">More Detail</button>
-                </div>
-            </div>
-        </div>
     </div>
 
+    <!----drop down menu-->
+    <!-- Navbar with dropdowns -->
+    <nav class="navbar1">
+        <ul class="nav-list">
+            <li class="nav-item">
+                <button class="dropdown-btn">For rent</button>
+                <div class="dropdown-content">
+                    <a href="#">House</a>
+                    <a href="#">Apartment</a>
+                    <a href="#">Land</a>
+                    <a href="#">Commercial</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <button class="dropdown-btn">For sell</button>
+                <div class="dropdown-content">
+                    <a href="#">House</a>
+                    <a href="#">Apartment</a>
+                    <a href="#">Land</a>
+                    <a href="#">Commercial</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <button class="dropdown-btn">Area</button>
+                <div class="dropdown-content">
+                    <a href="#">Ahmedabad</a>
+                    <a href="#">mehsana</a>
+                    <a href="#">Vadodara</a>
+                    <a href="#">Delhi</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <button class="dropdown-btn">Bedroom</button>
+                <div class="dropdown-content">
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <button class="dropdown-btn">Max. Price</button>
+                <div class="dropdown-content">
+                    <a href="#">₹ 10,000</a>
+                    <a href="#">₹ 1L</a>
+                    <a href="#">₹ 1cr</a>
+                    <a href="#">No limit</a>
+                </div>
+            </li>
+            <p class="rem">Search</p>
+        </ul>
+    </nav>
+
+    <!------search btn--------->
+    <section class="search2">
+        <div class="container5">
+            <input type="text" id="search" placeholder="Search for property...">
+            <button id="searchButton">Search</button>
+        </div>
+    </section>
+
+    <!---main content-->
+    <section id="explore" class="explore">
+        <div class="container">
+            <h2>Check Our Section Of Finest Properties</h2>
+            <p>Find Best Properties in Your Location and budget</p>
+            <div class="properties">
+                <div class="property-card">
+                    <img src="https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                        alt="Property 1">
+                    <h3>Shilp Skyline</h3>
+                    <p>Gandhinagar</p>
+                    <a href="property1.html"><button class="btn4">More Detail</button></a>
+                </div>
+                <div class="property-card">
+                    <img src="https://img.staticmb.com/mbimages/project/Photo_h0_w320/2024/12/19/Project-Photo-19-Shaligram-Luxuria-Ahmedabad-5364697_1067_1600_0_320.jpg"
+                        alt="Property 2">
+                    <h3>Shaligram Luxuria</h3>
+                    <p>Thaltej, Ahmedabad</p>
+                    <a href="property1.html"><button class="btn4">More Detail</button></a>
+                </div>
+                <div class="property-card">
+                    <img src="https://housing-images.n7net.in/4f2250e8/4bfcb9c5a108326dc682e0dd372905dd/v0/large/prism-near_nirma_university_on_sg_highway-ahmedabad-artham_group.jpeg"
+                        alt="Property 3">
+                    <h3>Artham Prism</h3>
+                    <p>near Nirma Univercity</p>
+                    <a href="property1.html"><button class="btn4">More Detail</button></a>
+                </div>
+                <div class="property-card">
+                    <img src="https://housing-images.n7net.in/4f2250e8/017207d7eac608052f572386922b1882/v0/large/anamika_high_point-bodakdev-ahmedabad-constera_realty.jpeg"
+                        alt="Property 4">
+                    <h3>Anamika High Point</h3>
+                    <p>Gandhinagar</p>
+                    <a href="property1.html"><button class="btn4">More Detail</button></a>
+                </div>
+            </div>
+            <div class="section2">
+                <div class="properties">
+                    <div class="property-card">
+                        <img src="https://housing-images.n7net.in/4f2250e8/348045200dbeb3d9702f27c5ad26c239/v0/large/aradhana_luxuria-chandkheda-ahmedabad-aradhna_group.jpeg"
+                            alt="Property 5">
+                        <h3>Ardhana Luxuria</h3>
+                        <p>Nr. Amrakunj lake view bungaloes</p>
+                        <a href="property1.html"><button class="btn4">More Detail</button></a>
+                    </div>
+                    <div class="property-card">
+                        <img src="https://housing-images.n7net.in/4f2250e8/befc962d72e47309e9924166598e53af/v0/large/akshar_anant-shela-ahmedabad-keshav_narayan_group.jpeg"
+                            alt="Property 6">
+                        <h3>Akshar Anant</h3>
+                        <p>Shela, South west, Ahmedabad</p>
+                        <a href="property1.html"><button class="btn4">More Detail</button></a>
+                    </div>
+                    <div class="property-card">
+                        <img src="https://housing-images.n7net.in/4f2250e8/51660e8b6937fa3ec8f3114a1b1f53f9/v0/large/surdhara_96-bhat_1-ahmedabad-shaily_suvas_infra.jpeg"
+                            alt="Property 7">
+                        <h3>Surdhara 96</h3>
+                        <p>Delhi</p>
+                        <a href="property1.html"><button class="btn4">More Detail</button></a>
+                    </div>
+                    <div class="property-card">
+                        <img src="https://housing-images.n7net.in/4f2250e8/04f52719c968f21b53ff9635ad3bc122/v0/large/sierra-satellite-ahmedabad-shannon_projects_llp.jpeg"
+                            alt="Property 8">
+                        <h3>Shilp skyline</h3>
+                        <p>Vadodara</p>
+                        <a href="property1.html"><button class="btn4">More Detail</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---hero section slide-->
     <section class="hero">
         <div class="hero-slider">
-            <div class="slide" style="background-image: url('img1.jpeg');"></div>
-            <div class="slide" style="background-image: url('img2.jpg');"></div>
-            <div class="slide" style="background-image: url('img3.jpg');"></div>
-            <div class="slide" style="background-image: url('img4.jpeg');"></div>
+            <div class="slide"
+                style="background-image: url('https://godrejpropertiesahmedabad.in/images/exploring-residential-projects-and-flats-in-ahmedabad.jpg');">
+            </div>
+            <div class="slide"
+                style="background-image: url('https://3.imimg.com/data3/UU/PG/MY-14556386/images-nitu-20blossom-500x500.jpg');">
+            </div>
+            <div class="slide"
+                style="background-image: url('https://i0.shbdn.com/photos/11/28/72/x5_1224112872fm0.jpg');"></div>
+            <div class="slide"
+                style="background-image: url('https://st2.depositphotos.com/51720920/47625/i/1600/depositphotos_476253342-stock-photo-new-modern-block-flats-green.jpg');">
+            </div>
         </div>
         <div class="hero-content">
-            <h1>Welcome to My Website</h1>
+            <h1>Welcome to Trustedge Realty</h1>
             <p>Your journey begins here. Explore our world!</p>
             <a href="#explore" class="btn">Explore Now</a>
         </div>
     </section>
 
-    <section class="hero2">
-        <div class="hero-content2">
-            <div class="text-content">
-                <h1>Welcome to Our Service</h1>
-                <p>Trustedge Realty PVT LTD.</p>
+    <!-----slider main 2 section-->
+    <div class="slider-container">
+        <div class="slider">
+
+            <!-- Section 1 -->
+            <div class="slider-section">
+                <h2>Up-coming project, Mehsana</h2>
+                <div class="product">
+                    <div class="product-item">
+                        <img src="https://housing-images.n7net.in/4f2250e8/fb19ed9b7c7d0a96c16b0c93b3c682f5/v0/large/propus_clara-vastral-ahmedabad-propus_infracon.jpeg"
+                            alt="Product 1">
+                        <h3>Shilp</h3>
+                        <a href="property1.html"><button class="btn4">More Detail</button></a>
+                    </div>
+
+                    <div class="product-item">
+                        <img src="https://housing-images.n7net.in/4f2250e8/0424174dc26a8bc680300d6630352692/v0/large/aleta_modern_living-jagatpur_gota-ahmedabad-laxmi_developer.jpeg"
+                            alt="Product 2">
+                        <h3>Aron Spectra</h3>
+                        <a href="property1.html"><button class="btn4">More Detail</button></a>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://housing-images.n7net.in/4f2250e8/b46ace9a170ac853d2fa1b289e55f012/v0/fs/shiv_vivanta-chandkheda-ahmedabad-rudra_enterprise.jpeg"
+                            alt="Product 3">
+                        <h3>Shilp Corporation</h3>
+                        <a href="property1.html"><button class="btn4">More Detail</button></a>
+                    </div>
+                </div>
             </div>
-            <div class="login-form-container">
-                <form class="login-form">
-                    <h2>Trustedge Realty Inquiry Form.</h2>
-                    <input type="text" placeholder="Inquiry Type" required>
-                    <input type="text" placeholder="Information" required>
-                    <input type="text" placeholder="Location" required>
-                    <input type="text" placeholder="Property" required>
-                    <input type="email" placeholder="Enter Your E-mail" required>
-                    <button type="submit">Submit</button>
-                </form>
+            <!-- Section 2 -->
+            <div class="slider-section">
+                <h2>Best-Budget project, Gandhinagar</h2>
+                <div class="product">
+                    <div class="product-item">
+                        <img src="https://housing-images.n7net.in/4f2250e8/60fa91460b15259d8d066f041ae7d52d/v0/large/pragati_two-narolgam-ahmedabad-greenearth_infraspace.jpeg"
+                            alt="Product 4">
+                        <h3>Sudhara Sky</h3>
+                        <a href="property1.html"><button class="btn4">More Detail</button></a>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://housing-images.n7net.in/4f2250e8/0424174dc26a8bc680300d6630352692/v0/large/aleta_modern_living-jagatpur_gota-ahmedabad-laxmi_developer.jpeg"
+                            alt="Product 5">
+                        <h3>Akshat</h3>
+                        <a href="property1.html"><button class="btn4">More Detail</button></a>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://housing-images.n7net.in/4f2250e8/fb19ed9b7c7d0a96c16b0c93b3c682f5/v0/large/propus_clara-vastral-ahmedabad-propus_infracon.jpeg"
+                            alt="Product 6">
+                        <h3>Saligram luxuria</h3>
+                        <a href="property1.html"><button class="btn4">More Detail</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 3 -->
+            <div class="slider-section">
+                <h2>Opening, Delhi </h2>
+                <div class="product">
+                    <div class="product-item">
+                        <img src="https://housing-images.n7net.in/4f2250e8/b46ace9a170ac853d2fa1b289e55f012/v0/fs/shiv_vivanta-chandkheda-ahmedabad-rudra_enterprise.jpeg"
+                            alt="Product 7">
+                        <h3>Artgham</h3>
+                        <a href="property1.html"><button class="btn4">More Detail</button></a>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://housing-images.n7net.in/4f2250e8/60fa91460b15259d8d066f041ae7d52d/v0/large/pragati_two-narolgam-ahmedabad-greenearth_infraspace.jpeg"
+                            alt="Product 8">
+                        <h3>Anamika Port</h3>
+                        <a href="property1.html"><button class="btn4">More Detail</button></a>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://housing-images.n7net.in/4f2250e8/0424174dc26a8bc680300d6630352692/v0/large/aleta_modern_living-jagatpur_gota-ahmedabad-laxmi_developer.jpeg"
+                            alt="Product 9">
+                        <h3>Prism Fofrt Villa</h3>
+                        <a href="property1.html"><button class="btn4">More Detail</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-buttons">
+            <button class="slider-button" id="prevBtn">&#10094;</button>
+            <button class="slider-button" id="nextBtn">&#10095;</button>
+        </div>
+
+        <script>
+            let currentSlide = 0;
+            const slides = document.querySelectorAll('.slider-section');
+            const totalSlides = slides.length;
+
+            const nextBtn = document.getElementById('nextBtn');
+            const prevBtn = document.getElementById('prevBtn');
+
+            function showSlide(index) {
+                if (index >= totalSlides) {
+                    currentSlide = 0;
+                } else if (index < 0) {
+                    currentSlide = totalSlides - 1;
+                } else {
+                    currentSlide = index;
+                }
+
+                const slider = document.querySelector('.slider');
+                slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+            }
+
+            nextBtn.addEventListener('click', () => {
+                showSlide(currentSlide + 1);
+            });
+
+            prevBtn.addEventListener('click', () => {
+                showSlide(currentSlide - 1);
+            });
+
+            showSlide(currentSlide); // Initial slide display
+        </script>
+    </div>
+
+    <!------------price prediction tools----------------->
+    <div class="tools">
+        <div class="tools-exchange">
+            <h3>Trustedge Realty Price Prediction Tool</h3>
+            <form id="priceForm">
+                <label for="location">Location:</label>
+                <select id="location" required>
+                    <option value="City">City</option>
+                    <option value="City">Ahmedabad</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Mehsana">Mehsana</option>
+                    <option value="Vadodara">Vadodara</option>
+                    <option value="Gandhinagar">Gandhinagar</option>
+                    <option value="Kalol">Kalol</option>
+                </select>
+                <label for="bedrooms">Number of Bedrooms:</label>
+                <input type="number" id="bedrooms" required min="1" max="10">
+                <label for="squareFeet">Square Feet:</label>
+                <input type="number" id="squareFeet" required min="500" max="10000">
+                <label for="ageOfHouse">Age of House (years):</label>
+                <input type="number" id="ageOfHouse" required min="1" max="100">
+                <button type="submit">Predict Price</button>
+            </form>
+
+            <div id="result">
+                <h3>Predicted Price:</h3>
+                <p id="predictedPrice">Please enter values above to get an estimate.</p>
+            </div>
+        </div>
+
+        <!----- price prediction tools--->
+        <script>
+            // price prediction tools
+            document.getElementById('priceForm').addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                // Get input values
+                const location = document.getElementById('location').value;
+                const bedrooms = document.getElementById('bedrooms').value;
+                const squareFeet = document.getElementById('squareFeet').value;
+                const ageOfHouse = document.getElementById('ageOfHouse').value;
+
+                // Simple formula for price prediction based on these factors (can be replaced with a more complex model)
+                let basePrice = 1000000; // Base price in dollars
+
+                // Adjust price based on location
+                if (location === 'city') {
+                    basePrice *= 3.5;
+                } else if (location === 'suburb') {
+                    basePrice *= 3.2;
+                }
+
+                // Adjust price based on number of bedrooms
+                basePrice += bedrooms * 200000;
+
+                // Adjust price based on square feet
+                basePrice += squareFeet * 1000;
+
+                // Adjust price based on the age of the house (newer houses tend to cost more)
+                if (ageOfHouse < 1) {
+                    basePrice *= 3.2;
+                } else if (ageOfHouse > 5) {
+                    basePrice *= 2.2;
+                }
+
+                // Display predicted price
+                document.getElementById('predictedPrice').textContent = `${basePrice.toLocaleString()}`;
+            });
+        </script>
+
+        <div class="text-area">
+            <h3 class="text1">Trustedge Realty Pvt Ltd is a Professional Real Estate Agent | Real Estate Agency | Real
+                Estate Broker that
+                helps to ensure your best property as per your need in this super-competitive market of Gujrat -
+                India.</h3>
+
+            <h3 class="text2">Residential</h3>
+            <h3>Find Residential, property like<br> Apartment, Villa Bungalows, Service <br>Apartment,</h3>
+        </div>
+    </div>
+
+    <!-- Team Information -->
+    <section id="team" class="team">
+        <div class="container">
+            <h2>Meet Our Team</h2>
+            <div class="team-members">
+                <div class="team-member">
+                    <img src="images/pic.png" alt="Team Member 1">
+                    <h4>Jignesh Panchal</h4>
+                    <p>Founder & CEO</p>
+                    <a href="team.html"><button class="btn4">View Profile</button></a>
+                </div>
+                <div class="team-member">
+                    <img src="images/av1.avif" alt="Team Member 2">
+                    <h4>Kajal Panchal</h4>
+                    <p>Sales Manager</p>
+                    <a href="team.html"><button class="btn4">View Profile</button></a>
+                </div>
+                <div class="team-member">
+                    <img src="images/pic.png" alt="Team Member 3">
+                    <h4>Patel Yash</h4>
+                    <p>Property Expert</p>
+                    <a href="team.html"><button class="btn4">View Profile</button></a>
+                </div>
+                <div class="team-member">
+                    <img src="images/pic.png" alt="Team Member 4">
+                    <h4>Bhargav Panchal</h4>
+                    <p>IT Support</p>
+                    <a href="team.html"><button class="btn4">View Profile</button></a>
+                </div>
             </div>
         </div>
     </section>
 
-    <div class="border">
-        <div class="shop-section">
-            <div class="shop-container">
-                <h1 class="shop-title">Our Shop</h1>
-                <div class="shop-grid">
-                    <div class="product">
-                        <img src="box1.jpg" alt="Product 1">
-                        <h3>Savera</h3>
-                        <p class="price">$19.99</p>
-                        <p class="price">$19.99</p>
-                        <p class="price">$19.99</p>
-                        <button class="add-to-cart">More Detail</button>
-                    </div>
+    <!----listing area-->
+    <div class="background-container">
+        <div class="content-wrapper">
+            <header>
+                <h2>New Project Gujrat For Sell</h2>
+            </header>
+            <section class="real-estate-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Image</th>
+                            <th>Property Name</th>
+                            <th>Location</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="https://t4.ftcdn.net/jpg/04/73/72/11/360_F_473721132_I9LNMCvx7Du6EdJNH91EywcNHzgtEclz.jpg"
+                                    alt="Property Image"></td>
+                            <td>Shilp Skyline</td>
+                            <td>Ahmedabad</td>
+                            <td>₹ 88 L</td>
+                            <td class="color">View More</td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://images.pexels.com/photos/1475938/pexels-photo-1475938.jpeg?cs=srgb&dl=pexels-e-photography-1475938.jpg&fm=jpg"
+                                    alt="Property Image"></td>
+                            <td>Arvind Uplands 3</td>
+                            <td>Mumbai</td>
+                            <td>₹ 1.20 cr</td>
+                            <td class="color">View More</td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSrOBl0yDHxhYcteU1Epn2blB2hBHFDQhf-Q&s"
+                                    alt="Property Image"></td>
+                            <td>Sun Urban Park</td>
+                            <td>Ganddhinagar</td>
+                            <td>₹ 4 cr</td>
+                            <td class="color">View More</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </div>
 
-                    <div class="product">
-                        <img src="box1.jpg" alt="Product 2">
-                        <h3>Blue Bell</h3>
-                        <p class="price">$29.99</p>
-                        <p class="price">$19.99</p>
-                        <p class="price">$19.99</p>
-                        <button class="add-to-cart">More Detail</button>
-                    </div>
+    <!----Business------->
+    <section class="business-section">
+        <div class="container8">
+            <div class="business-stat">
+                <div class="stat-item">
+                    <h3 class="stat-number" id="happyClients">0</h3>
+                    <p class="stat-label">Happy Clients</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number" id="yearsInBusiness">0</h3>
+                    <p class="stat-label">Years in Business</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number" id="totalProperties">0</h3>
+                    <p class="stat-label">Total Properties Sold <span class="symbol">🏡</span></p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number" id="businessClients">0</h3>
+                    <p class="stat-label">Total Project <span class="symbol">👥</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
 
-                    <div class="product">
-                        <img src="box1.jpg" alt="Product 3">
-                        <h3>Swarnim Sentossa</h3>
-                        <p class="price">$39.99</p>
-                        <p class="price">$19.99</p>
-                        <p class="price">$19.99</p>
-                        <button class="add-to-cart">More Detail</button>
-                    </div>
+        // business 
+        document.addEventListener("DOMContentLoaded", function () {
+            let happyClients = 3000;
+            let yearsInBusiness = 15;
+            let totalProperties = 450;
+            let businessClients = 500;
 
-                    <div class="product">
-                        <img src="box1.jpg" alt="Product 3">
-                        <h3>shilp Corporate</h3>
-                        <p class="price">$39.99</p>
-                        <p class="price">$19.99</p>
-                        <p class="price">$19.99</p>
-                        <button class="add-to-cart">More Detail</button>
+            const happyClientsElement = document.getElementById("happyClients");
+            const yearsInBusinessElement = document.getElementById("yearsInBusiness");
+            const totalPropertiesElement = document.getElementById("totalProperties");
+            const businessClientsElement = document.getElementById("businessClients");
+
+            function animateCounter(element, start, end, duration) {
+                let range = end - start;
+                let stepTime = Math.abs(Math.floor(duration / range));
+                let current = start;
+
+                let interval = setInterval(function () {
+                    current = (end > start) ? Math.min(current + 1, end) : Math.max(current - 1, end);
+                    element.innerText = current;
+
+                    if (current === end) {
+                        clearInterval(interval);
+                    }
+                }, stepTime);
+            }
+
+            animateCounter(happyClientsElement, 0, happyClients, 2000);
+            animateCounter(yearsInBusinessElement, 0, yearsInBusiness, 2000);
+            animateCounter(totalPropertiesElement, 0, totalProperties, 2000);
+            animateCounter(businessClientsElement, 0, businessClients, 2000);
+        });
+    </script>
+
+    <!------section4-------->
+    <section class="property-list">
+        <div class="container5">
+            <h2>Show Morden Apartment</h2>
+            <h3>Apartment Outdoor Look</h3>
+            <div class="wrapper5">
+                <div class="property5">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTku_UxIbJon4SR5QEs5nqaWf2uH7zjltz37A&s"
+                        alt="Apartment1">
+                    <div class="text-info">
+                        <h2>Ahmedabad</h2>
+                        <P>Society GYM</P>
+                        <p>Underground parking</p>
+                        <p>Garden, Children's Playing Area</p>
+                        <a href="more.html" class="btn6">View</a>
+                        <h4>Trustedge Realty.</h4>
+                    </div>
+                </div>
+                <div class="property5">
+                    <img src="https://images.pexels.com/photos/27307397/pexels-photo-27307397/free-photo-of-a-modern-apartment-building-with-balconies-and-balconies.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Apartment2">
+                    <div class="text-info">
+                        <h2>Mumbai</h2>
+                        <p>Beautiful Beach View</p>
+                        <p>Garden and Walking Area</p>
+                        <p>parking Area</p>
+                        <a href="more.html" class="btn6">View</a>
+                        <h4>Trustedge Realty.</h4>
+                    </div>
+                </div>
+                <div class="property5">
+                    <img src="https://thumbs.dreamstime.com/b/modern-real-estate-website-design-digital-marketing-concept-close-up-view-computer-screen-displaying-list-available-350193188.jpg"
+                        alt="Apartment3">
+                    <div class="text-info">
+                        <h2>Noida</h2>
+                        <p>Box Cricket Area</p>
+                        <p>Under Ground Parking</p>
+                        <P>Children's Playing Area</P>
+                        <a href="more.html" class="btn6">View</a>
+                        <h4>Trustedge Realty.</h4>
                     </div>
                 </div>
             </div>
 
-
-
-
-
-            <footer class="footer">
-                <div class="footer-container">
-                    <!-- Contact Info Section -->
-                    <div class="footer-section">
-                        <h4>Contact Us</h4>
-                        <p>Phone: (123) 456-7890</p>
-                        <p>Email: info@realestate.com</p>
-                        <p>123 Real Estate St, City, State</p>
-                    </div>
-
-                    <!-- Quick Links Section -->
-                    <div class="footer-section">
-                        <h4>Quick Links</h4>
-                        <ul>
-                            <li><a href="#">Buy a Home</a></li>
-                            <li><a href="#">Sell a Home</a></li>
-                            <li><a href="#">Rent a Property</a></li>
-                            <li><a href="#">Commercial Properties</a></li>
-                            <li><a href="#">Mortgage Calculator</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- Social Media Links -->
-                    <div class="footer-section">
-                        <h4>Follow Us</h4>
-                        <ul class="social-media">
-                            <i class="fa-brands fa-facebook"></i>
-                            <i class="fa-brands fa-whatsapp"></i>
-                            <i class="fa-brands fa-instagram"></i>
-                            <i class="fa-brands fa-twitter"></i>
-                            <i class="fa-brands fa-linkedin"></i>
-                        </ul>
-                    </div>
-
-                    <!-- Legal Info Section -->
-                    <div class="footer-section">
-                        <h4>Legal</h4>
-                        <ul>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Terms of Service</a></li>
-                            <li><a href="#">Disclaimer</a></li>
-                        </ul>
+            <h3>Apartment Indoor Look</h3>
+            <div class="wrapper5">
+                <div class="property5">
+                    <img src="https://media.istockphoto.com/id/1449163384/photo/view-of-balcony-in-mid-beach-in-miami-beach.jpg?s=612x612&w=0&k=20&c=QVacmJyCNwZlzfAuECceFNCWtazVfW_UATYo4LcgCZY="
+                        alt="Apartment4">
+                    <div class=" text-info">
+                        <h2>Ahmedabad</h2>
+                        <p>2 BHK Apartment</p>
+                        <p>Balcony View</p>
+                        <a href="more.html" class="btn6">View</a>
+                        <h4>Trustedge Realty.</h4>
                     </div>
                 </div>
-
-                <!-- Copyright Info -->
-                <div class="footer-bottom">
-                    <p>&copy; 2025 Real Estate Company. All Rights Reserved.</p>
+                <div class="property5">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfBNNDnBFcgehSgLP6rAaTd46nPW3vkIvD_Q&s"
+                        alt="Apartment5">
+                    <div class="text-info">
+                        <h2>Mumbai</h2>
+                        <p>3 & 4 BHK Apartment</p>
+                        <p>Terris Garden</p>
+                        <a href="more.html" class="btn6">View</a>
+                        <h4>Trustedge Realty.</h4>
+                    </div>
                 </div>
-            </footer>
+                <div class="property5">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtCsTDmeVlTXJQeK7JLWbdXAGwu8hjigbJ5Q&s"
+                        alt="Apartment6">
+                    <div class="text-info">
+                        <h2>Noida</h2>
+                        <p>3 BHK Apartmrnt</p>
+                        <p>3 Bedroom With kitchen ana Hall</p>
+                        <a href="more.html" class="btn6">View</a>
+                        <h4>Trustedge Realty.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <script src="script.js"></script>
+    <!------------investment chatrt----------->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <h2 class="text3">Trustedge Realty Investment Chart</h2>
+    <section class="container7">
+        <div class="data-section">
+            <h2>Market Overview</h2>
+            <p>Explore real-time data on the housing market across different locations and investment potential.</p>
+            <div class="location-data">
+                <h3>Average Prices in Key Locations</h3>
+                <div id="price-data">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Location</th>
+                                <th>Avg Price (₹)</th>
+                                <th>Price Change (%)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Ahmedabad</td>
+                                <td>950,000</td>
+                                <td>5%</td>
+                            </tr>
+                            <tr>
+                                <td>Delhi</td>
+                                <td>750,000</td>
+                                <td>3%</td>
+                            </tr>
+                            <tr>
+                                <td>Mumbai</td>
+                                <td>1,200,000</td>
+                                <td>7%</td>
+                            </tr>
+                            <tr>
+                                <td>Surat</td>
+                                <td>650,000</td>
+                                <td>8%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="charts-section">
+            <h2>Investment Opportunities & Growth Potential</h2>
+            <div id="growth-chart-container">
+                <canvas id="growthChart"></canvas>
+            </div>
+
+            <button class="invest-btn">Invest Amount</button>
+
+        </div>
+    </section>
+    <script>
+        const growthData = {
+            labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+            datasets: [{
+                label: 'Potential Growth in New York (in %)',
+                data: [5, 6, 7, 8, 6, 5, 7, 8, 9, 10, 9, 11],
+                borderColor: 'rgb(54, 162, 235)',
+                backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                fill: true,
+            }, {
+                label: 'Potential Growth in Miami (in %)',
+                data: [2, 3, 4, 5, 6, 7, 8, 7, 9, 10, 11, 12],
+                borderColor: 'rgb(75, 192, 192)',
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                fill: true,
+            }]
+        };
+
+        // Chart.js setup
+        const ctx = document.getElementById('growthChart').getContext('2d');
+        const growthChart = new Chart(ctx, {
+            type: 'line',
+            data: growthData,
+            options: {
+                responsive: true,
+                scales: {
+                    x: {
+                        beginAtZero: true,
+                    },
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            stepSize: 1
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+
+    <!------section5------>
+    <section class="property-section">
+        <h3>New Project, Ahmedabad</h3>
+        <div class="property-container">
+            <div class="property-item">
+                <div class="property-image">
+                    <img src="https://media.licdn.com/dms/image/v2/D4D12AQG6aXyp2DNq0g/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1673948982710?e=2147483647&v=beta&t=7JARV48woJv8CKCPa_xulqHgeHLsWoh8LceatWdp-iQ"
+                        alt="Property 1">
+                </div>
+                <div class="property-details">
+                    <h3>Modern Apartment</h3>
+                    <p>2 Bedrooms, 1 Bathroom</p>
+                    <p class="price">₹ 1 cr</p>
+                </div>
+            </div>
+            <div class="property-item">
+                <div class="property-image">
+                    <img src="https://aartisto.com/wp-content/uploads/2025/01/Real-Estate-in-Dubai-930x620.jpg"
+                        alt="Property 2">
+                </div>
+                <div class="property-details">
+                    <h3>Luxury Villa</h3>
+                    <p>4 Bedrooms, 3 Bathrooms</p>
+                    <p class="price">₹ 7.2 cr</p>
+                </div>
+            </div>
+            <div class="property-item">
+                <div class="property-image">
+                    <img src="https://firstchoicebelize.com/images/mobile_slider_large/2716_JZ001.jpg" alt="Property 3">
+                </div>
+                <div class="property-details">
+                    <h3>Cozy Cottage</h3>
+                    <p>1 Bedroom, 1 Bathroom</p>
+                    <p class="price">₹ 5 cr</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---footer-->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Contact Info Section -->
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p class="over">Phone: (123) 456-7890</p>
+                <p class="over">Email: Trustedgerealty@gmail.com</p>
+                <p class="over">123 Real Estat Ahmedabad, Gujrat, India</p>
+            </div>
+
+            <!-- Quick Links Section -->
+            <div class="footer-section">
+                <h4>Service</h4>
+                <ul>
+                    <li><a href="#">Buy a Home</a></li>
+                    <li><a href="#">Sell a Home</a></li>
+                    <li><a href="#">Rent a Property</a></li>
+                    <li><a href="#">Commercial Properties</a></li>
+                    <li><a href="#">Mortgage Calculator</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="footer-section">
+                <h4>discover</h4>
+                <ul>
+                    <li><a href=#>> Ahmedabad</a></li>
+                    <li><a href=#>> Gandhinagar</a></li>
+                    <li><a href=#>> Mehsana</a></li>
+                    <li><a href=#>> Mumbai</a></li>
+                    <li><a href=#>> Delhi</a></li>
+                </ul>
+            </div>
+
+            <!-- Legal Info Section -->
+            <div class="footer-section">
+                <h4>Site Link</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Disclaimer</a></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+
+        <!-- Copyright Info -->
+        <div class="footer-bottom">
+            <p>&copy; Trustedge Realty Real Estate Company All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-section">
+            <ul class="social-media">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </ul>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
+
+</style>
+</head>

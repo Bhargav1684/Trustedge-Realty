@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trustedgerealty Team</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="website icon" type="png" href="images/logo.png">
+</head>
+
+<body>
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+            font-family: sans-serif;
+        }
+
+        .body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .text {
+            text-align: center;
+            padding-top: 40px;
+            padding-bottom: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .card-container {
+            display: flex;
+            gap: 100px;
+            padding-top: 40px;
+            justify-content: center;
+            background-color: #f4f4f4;
+            padding-bottom: 50px;
+        }
+
+        .card {
+            position: relative;
+            overflow: hidden;
+            width: 300px;
+            height: 300px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            display: flex;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .card img {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            object-fit: cover;
+            transition: all 0.3s;
+        }
+
+        .card p {
+            margin-top: 150px;
+            opacity: 0;
+        }
+
+        .info {
+            bottom: 0;
+            left: 0;
+            padding: 15px;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            background: #41404079;
+            transition: all 0.3s;
+        }
+
+        .name {
+            font-size: 20px;
+            font-weight: 600;
+            color: #f9f9f9;
+        }
+
+        .role {
+            font-size: 16px;
+            font-weight: 400;
+            color: #e9e7e7;
+        }
+
+        .card:hover img {
+            top: 20px;
+            left: 20px;
+            height: 80px;
+            width: 80px;
+            border-radius: 50%
+        }
+
+        .card:hover .info {
+            left: 40%;
+            top: 30px;
+            height: 50px;
+            color: black;
+        }
+
+        .card:hover p {
+            animation: fadeup 0.3s forwards;
+        }
+
+        @keyframes fadeup {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+    <h2 class="text">Meet Our Real Estate Team</h2>
+    <div class="card-container">
+        <div class="card">
+            <img src="images/pic.png" alt="image">
+            <div class="info">
+                <span class="name">Jignesh Panchal</span>
+                <span class="role">Founder & CEO</span>
+            </div>
+            <p>Jignesh has over 20 years of experience in real estate...
+                <br>he's very successful Real Estate Business Man.
+            </p>
+        </div>
+        <div class="card">
+            <img src="images/av1.avif" alt="image">
+            <div class="info">
+                <span class="name">Kajal Panchal</span>
+                <span class="role">Seniour Sales Manager</span>
+            </div>
+            <p>Kajal specializes in residential properties and is passionate about helping clients find their dream
+                home...<br> She have 6 Year of Experience in Real Estate.</p>
+        </div>
+        <div class="card">
+            <img src="images/pic.png" alt="image">
+            <div class="info">
+                <span class="name">Yash Patel</span>
+                <span class="role">Sales Manager</span>
+            </div>
+            <p>Yash oversees all marketing strategies to showcase properties to the right audience... <br>He Have 3 Year
+                of Experirnce in sales field. </p>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <img src="images/pic.png" alt="image">
+            <div class="info">
+                <span class="name">Gaurav Rathod</span>
+                <span class="role">Property Export</span>
+            </div>
+            <p>Gaurav has over 20 years of experience in real estate...</p>
+        </div>
+        <div class="card">
+            <img src="images/pic.png" alt="image">
+            <div class="info">
+                <span class="name">Bhargav Panchal</span>
+                <span class="role">IT Support</span>
+            </div>
+            <p>Bhargav is a senior web devloper over 20 year.<br>
+                He was joun Trustedge Realty since 2004.</p>
+        </div>
+        <div class="card">
+            <img src="images/av1.avif" alt="image">
+            <div class="info">
+                <span class="name">Riya Patel</span>
+                <span class="role">IT Support</span>
+            </div>
+            <p>Darshan is a Junior web devloper.</p>
+        </div>
+    </div>
+</body>
+
+</html>

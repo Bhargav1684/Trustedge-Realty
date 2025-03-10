@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Restaurant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <h1>Foodie's Delight</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="cart.html">Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="hero.png" alt="Delicious Food">
+    <div class="hero-text">
+      <h2>Welcome to Foodie's Delight</h2>
+      <p>Enjoy the best food in town!</p>
+    </div>
+  </section>
+
+  <!---food-section1---->
+  <div class="food-section">
+    <div class="food-item">
+      <a href=""><img
+          src="https://hips.hearstapps.com/hmg-prod/images/classic-cheese-pizza-recipe-2-64429a0cb408b.jpg?crop=0.6666666666666667xw:1xh;center,top&resize=1200:*"
+          alt="Pizza"></a>
+      <h3>Pizza</h3>
+    </div>
+
+    <div class="food-item">
+      <a href=""><img
+          src="https://www.shutterstock.com/image-photo/delicious-cheeseburger-stacked-high-juicy-600nw-126066629.jpg"
+          alt="Burger"></a>
+      <h3>Burger</h3>
+    </div>
+
+    <div class="food-item">
+      <a href=""><img
+          src="https://img.freepik.com/premium-photo/traditional-italian-penne-pasta-with-bolognese-sauce-fresh-basil-black-background-side-view-close-up_166116-4345.jpg"
+          alt="Pasta"></a>
+      <h3>Pasta</h3>
+    </div>
+
+    <div class="food-item">
+      <a href=""><img
+          src="https://static.vecteezy.com/system/resources/thumbnails/027/536/411/small/delicious-french-fries-on-a-white-background-photo.jpg"
+          alt="Sushi"></a>
+      <h3>French fries</h3>
+    </div>
+
+    <div class="food-item">
+      <a href=""><img
+          src="https://media.istockphoto.com/id/1292637103/photo/veg-hakka-noodles-a-popular-oriental-dish-made-with-noodles-and-vegetables-served-over-a.jpg?s=612x612&w=0&k=20&c=wp7gojub20NEMRABP1wIaDY6qq11eMFJZ2gqIjfht4g="
+          alt="Tacos"></a>
+      <h3>Noodles</h3>
+    </div>
+
+    <div class="food-item">
+      <a href=""><img
+          src="https://www.shutterstock.com/image-photo/dabeli-kutchi-double-roti-popular-600nw-1995480092.jpg"
+          alt="Salad"></a>
+      <h3>Dabeli</h3>
+    </div>
+
+    <div class="food-item">
+      <a href=""><img
+          src="https://images.immediate.co.uk/production/volatile/sites/30/2014/05/Epic-summer-salad-hub-2646e6e.jpg"
+          alt="Salad"></a>
+      <h3>Salad</h3>
+
+    </div>
+  </div>
+
+  <!----food-section2------>
+  <section class="food-section1">
+    <h2>Menu</h2>
+
+    <div class="food-container">
+      <div class="food-item1">
+        <img
+          src="https://content.jdmagicbox.com/comp/surat/b4/0261px261.x261.181213062959.q1b4/catalogue/saras-surti-thali-dumas-road-surat-gujarati-restaurants-cwiakyfzol.jpg"
+          alt="Gujrati, Thali">
+        <h3>Gujrati, Thali</h3>
+        <p>4 sabji, 3 roti, 3 puri, 1 papad, chhash, dal-rise.</p>
+        <span class="price">₹ 250</span><br>
+        <button class="add-to-cart" onclick="addToCart('Gujrati, Thali', 250)">Add to Cart</button>
+      </div>
+
+      <div class="food-item1">
+        <img src="https://prakashnamkeen.com/cdn/shop/files/PunjabiThali.jpg?v=1725724608" alt="Punjabi, Thali">
+        <h3>Punjabi, Thali</h3>
+        <p>3 Ghee paratha, Dal makhni, Pindi chole, Paneer sabji, Jeera rice.</p>
+        <span class="price">₹ 320</span><br>
+        <button class="add-to-cart" onclick="addToCart('Punjabi, Thali', 320)">Add to Cart</button>
+      </div>
+
+      <div class="food-item1">
+        <img src="https://gambhoimart.com/wp-content/uploads/2023/08/PhotoRoom-20230809_120614.png.webp"
+          alt="Paneer chilli">
+        <h3>Paneer Chilli</h3>
+        <p>golden-fried paneer cubes tossed in a spicy and tangy sauce.</p>
+        <span class="price">₹ 299</span><br>
+        <button class="add-to-cart" onclick="addToCart('Paneer Chilli', 299)">Add to Cart</button>
+      </div>
+
+      <div class="food-item1">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTinCKGPNr2g5zx4Qet43b2n3rGXhO-_ppJww&s"
+          alt="South indian">
+        <h3>South indian</h3>
+        <p>Plan dhosa, Idli, Mendu vada, Sambhar, Chatni</p>
+        <span class="price">₹ 180</span><br>
+        <button class="add-to-cart" onclick="addToCart('South indian', 180)">Add to Cart</button>
+      </div>
+
+      <div class="food-item1">
+        <img src="https://www.zaykakatadka.com/wp-content/uploads/2020/10/Sev-Khamani.png" alt="Sev khamni">
+        <h3>Sev khamni</h3>
+        <p>Green farm special sev khamni with dhaniya chatni</p>
+        <span class="price">₹ 110</span><br>
+        <button class="add-to-cart" onclick="addToCart('Sev Khamni', 110)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!---search-btn---->
+  <div class="search-container">
+    <input type="text" id="search" placeholder="search food" class="search-input">
+    <button id="search-button" class="search-btn">Search</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

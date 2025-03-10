@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Section</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="website icon" type="png" href="images/logo.png">
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1400px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .real-estate-section {
+            background-color: white;
+            padding: 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .real-estate-section h2 {
+            font-size: 2rem;
+            color: #333;
+        }
+
+        .real-estate-section p {
+            font-size: 1rem;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Image styling */
+        .real-estate-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .real-estate-section {
+                padding: 20px;
+            }
+
+            .real-estate-section h2 {
+                font-size: 1.5rem;
+            }
+
+            .real-estate-section p {
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .real-estate-section {
+                padding: 15px;
+            }
+
+            .real-estate-section h2 {
+                font-size: 1.2rem;
+            }
+
+            .real-estate-section p {
+                font-size: 0.8rem;
+            }
+        }
+
+        /* Button Styles */
+        .button {
+            display: inline-block;
+            background-color: #ff6347;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        /* extra for text area */
+        .container1 {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .container1 h3 {
+            font-size: 1.2rem;
+        }
+
+        header {
+            color: #333;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+
+        .search {
+            background-color: #f4f4f4;
+            padding: 20px 0;
+            text-align: end;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            font-size: 1rem;
+            width: 300px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            background-color: #ff6347;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .property-list {
+            padding: 50px 0;
+            background-color: #f4f4f4;
+        }
+
+        .property-list h3 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 1.5 rem;
+        }
+
+        .properties {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .property {
+            background-color: #ecf0f1;
+            margin: 15px;
+            padding: 20px;
+            width: 300px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .property img {
+            width: 100%;
+            border-radius: 8px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .property-info {
+            margin-top: 15px;
+        }
+
+        .property-info h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .property-info p {
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        .contact-btn {
+            padding: 10px 20px;
+            background-color: #ff6347;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="real-estate-section">
+            <h2>Luxury Apartments for Sale</h2>
+            <p>Discover the most exclusive luxury apartments in the city, designed for comfort and sophistication.
+                Whether you're looking for a cozy one-bedroom or a spacious penthouse, we have the perfect home for you.
+            </p>
+            <p>Our apartments are located in prime locations, close to shopping, restaurants, and public transport,
+                providing the convenience you need with the luxury you deserve.</p>
+
+            <!-- Real Estate Image -->
+            <img src="https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                alt="Luxury Apartments" class="real-estate-image">
+
+            <a href="#" class="button">Explore Listings</a>
+        </div>
+
+        <div class="real-estate-section">
+            <h2>Luxury Apartments for Sale</h2>
+            <p>Discover the most exclusive luxury apartments in the city, designed for comfort and sophistication.
+                Whether you're looking for a cozy one-bedroom or a spacious penthouse, we have the perfect home for you.
+            </p>
+            <p>Our apartments are located in prime locations, close to shopping, restaurants, and public transport,
+                providing the convenience you need with the luxury you deserve.</p>
+
+            <!-- Real Estate Image -->
+            <img src="https://newprojects.99acres.com/projects/dharti_infracon/dharti_skyline/images/e6nhd2ym_optOrig.png"
+                alt="Luxury Apartments" class="real-estate-image">
+
+            <a href="#" class="button">Explore Listings</a>
+        </div>
+        <div class="real-estate-section">
+            <h2>Luxury Apartments for Sale</h2>
+            <p>Discover the most exclusive luxury apartments in the city, designed for comfort and sophistication.
+                Whether you're looking for a cozy one-bedroom or a spacious penthouse, we have the perfect home for you.
+            </p>
+            <p>Our apartments are located in prime locations, close to shopping, restaurants, and public transport,
+                providing the convenience you need with the luxury you deserve.</p>
+
+            <!-- Real Estate Image -->
+            <img src="https://newprojects.99acres.com/projects/dharti_infracon/dharti_skyline/images/5k5r3fut_optOrig.png"
+                alt="Luxury Apartments" class="real-estate-image">
+
+            <a href="#" class="button">Explore Listings</a>
+        </div>
+    </div>
+
+    <!------extra for text area-->
+    <header>
+        <div class="container1">
+            <h1>Welcome to Your Dream Property</h1>
+            <p>Your dream home is just a click away. Search our listings now!</p>
+        </div>
+    </header>
+
+    <section class="search">
+        <div class="container1">
+            <input type="text" id="search" placeholder="Search for property...">
+            <button id="searchButton">Search</button>
+        </div>
+    </section>
+
+    <section class="property-list">
+        <div class="container1">
+            <h3>Featured Properties</h3>
+            <div class="properties">
+                <div class="property">
+                    <img src="https://img.jamesedition.com/listing_images/2024/12/11/15/44/53/86531bcc-ffe1-4ea5-a82e-631f88ba7885/je/1100xxs.jpg"
+                        alt="Property 1">
+                    <div class="property-info">
+                        <h3>Modern 3-Bedroom Apartment</h3>
+                        <p>Price: ₹ 50 L</p>
+                        <p>Location: Ahmedabad</p>
+                        <a href="contact.html"><button class="contact-btn">Contact Us</button></a>
+                    </div>
+                </div>
+
+                <div class="property">
+                    <img src="https://img.jamesedition.com/listing_images/2024/11/08/13/51/48/221b588b-b1c5-48c1-a3b1-0d4637da71d4/je/1100xxs.jpg"
+                        alt="Property 2">
+                    <div class="property-info">
+                        <h3>Cozy Family Home</h3>
+                        <p>Price: ₹ 1 cr</p>
+                        <p>Location: Rajkot</p>
+                        <a href="contact.html"><button class="contact-btn">Contact Us</button></a>
+                    </div>
+                </div>
+
+                <div class="property">
+                    <img src="https://newprojects.99acres.com/projects/shannon_projects_llp/shannon_sierra/images/1ycn1pt_1693039907_441906632_optOrig.jpg"
+                        alt="Property 3">
+                    <div class="property-info">
+                        <h3>Luxury Condo</h3>
+                        <p>Price: ₹ 1.3 to 5 cr</p>
+                        <p>Location: Surat</p>
+                        <a href="contact.html"><button class="contact-btn">Contact Us</button></a>
+                    </div>
+                </div>
+
+                <div class="property">
+                    <img src="https://www.adanirealty.com/-/media/project/realty/residential/ahmedabad/amogha/carousel-images/outdoor/amogha_cover-image.ashx"
+                        alt="Property 3">
+                    <div class="property-info">
+                        <h3>Luxury Villa</h3>
+                        <p>Price: ₹ 4 to 10 cr</p>
+                        <p>Location: Gandhinagar</p>
+                        <a href="contact.html"><button class="contact-btn">Contact Us</button></a>
+                    </div>
+                </div>
+
+                <div class="property">
+                    <img src="https://img.jamesedition.com/listing_images/2024/12/12/13/38/44/1f3e5ef3-73ef-46f5-8027-9f03d1948cfc/je/1100xxs.jpg"
+                        alt="Property 3">
+                    <div class="property-info">
+                        <h3>Cozy Family House</h3>
+                        <p>Price: ₹ 1 to 2 cr</p>
+                        <p>Location: Mehsana</p>
+                        <a href="contact.html"><button class="contact-btn">Contact Us</button></a>
+                    </div>
+                </div>
+
+                <div class="property">
+                    <img src="https://www.adanirealty.com/-/media/project/realty/residential/ahmedabad/aangan/outdoor/1920x1080/1920x1080-1-gate-view_op_01.ashx"
+                        alt="Property 3">
+                    <div class="property-info">
+                        <h3>Luxury Apartment</h3>
+                        <p>Price: ₹ 5 cr</p>
+                        <p>Location: Hyedrabad</p>
+                     <a href="contact.html"><button class="contact-btn">Contact Us</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

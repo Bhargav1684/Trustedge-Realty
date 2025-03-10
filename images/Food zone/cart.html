@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+</head>
+
+<style>
+    /* Navbar */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        background-color: #b0391f;
+        padding: 15px;
+        color: white;
+    }
+
+    .logo {
+        margin-top: 30px;
+        color: #faf3ed;
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 30px 20px;
+        font-size: 1.2rem;
+    }
+
+    .nav-links a {
+        color: #faf3ed;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .cart-section {
+        display: block;
+    }
+</style>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Foodie's Delight</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Menu</a></li>
+        </ul>
+        <div class="burger" onclick="toggleMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <!-- Cart Section -->
+    <div class="cart-section">
+        <h2>Your Cart</h2>
+        <!-- Cart items will be dynamically inserted here by JavaScript -->
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        displayCart(); // Display cart items when the page loads
+    </script>
+
+</body>
+
+</html>

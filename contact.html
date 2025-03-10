@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trustedgerealty Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="website icon" type="png" href="images/logo.png">
+</head>
+
+<body>
+
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #f4f4f4;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #000000;
+            text-decoration: none;
+            font-weight: bold;
+            text-decoration: underline;
+            padding-bottom: 80px;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            display: flex;
+            justify-content: center;
+            padding: 50px 10px;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1200px;
+            width: 100%;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .contact-info,
+        .contact-form {
+            flex: 1;
+            min-width: 300px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .contact-info h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .contact-info p {
+            margin-bottom: 20px;
+        }
+
+        .contact-info ul {
+            list-style-type: none;
+        }
+
+        .contact-info ul li {
+            margin-bottom: 10px;
+        }
+
+        .contact-form h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            background-color: #ff6347;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #004274;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+
+        .text {
+            text-align: center;
+            padding-top: 20px;
+        }
+    </style>
+
+    <h4 class="text">Welcome to Trustedge realty Inquiry Page</h4>
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-info">
+                <h2>Contact Us</h2>
+                <p>If you have any questions or need more information, feel free to reach out!</p>
+                <ul>
+                    <li><strong>Email:</strong> Trustedgerealty@gmail.com</li>
+                    <li><strong>Phone:</strong> +1 (800) 123-4567</li>
+                    <li><strong>Address:</strong> 123 Ahmedabad, Gujrat, India</li>
+                </ul>
+            </div>
+
+            <div class="contact-form">
+                <h2>Send a Message</h2>
+                <form id="contact-form">
+                    <label for="name">Inquiry Type</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="location">Location</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="property">Property</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit">Submit</button>
+
+                </form>
+            </div>
+        </div>
+    </section>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Back to Home</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <footer>
+        <p>&copy; Trustedge Realty Real Estate Company. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let message = document.getElementById("message").value;
+
+            if (name && email && message) {
+                alert("Thank you for reaching out! We will get back to you soon.");
+            } else {
+                alert("Please fill in all fields.");
+            }
+        });
+
+    </script>
+</body>
+
+</html>
